@@ -6,24 +6,24 @@ import {
   Row,
 } from "react-bootstrap";
 
-const Experience = ({ experiences }) => {
+const Experience = ({ heading, experienceList }) => {
   return (
-    <section className="section">
-      <Container>
-        <Jumbotron className="bg-white">
-          <h2 className="display-4 mb-5 text-center">
-            {experiences.heading}
-          </h2>
-          <Row>
-            {
-              experiences.data.map((data, index) => {
-                return <ExperienceCard key={index} data={data} />
-              })
-            }
-          </Row>
-        </Jumbotron>
+    <Jumbotron fluid id="experience" className="bg-light m-0 target-section">
+      <Container className=" p-3 mb-5 bg-light rounded">
+        <h2 className="display-4 pb-5 text-center">{heading}</h2>
+        <Row>
+          {
+          experienceList.map((experience, index) => (
+                <ExperienceCard
+                  key={`experience-card-${index}`}
+                  id={`experience-card-${index}`}
+                  value={experience}
+                />
+              )) 
+          }
+        </Row>
       </Container>
-    </section>
+    </Jumbotron>
   );
 }
 

@@ -51,7 +51,7 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/hashirshoaeb.png"),
+  imageLink: require("../editable-stuff/AdrianPic.png"),
   imageSize: 375,
   message:
     "I am currently a software engineering apprentice @ Expedia Group with a focus on frontend tools and technologies, most notiably React. I'm also passionate about continuing to grow my skills in web development and Computer Science through project based leanring and certifications.",
@@ -66,7 +66,7 @@ const about = {
 const repos = {
   show: true,
   heading: "Recent Projects",
-  gitHubUsername: "hashirshoaeb", //i.e."johnDoe12Gh"
+  gitHubUsername: "Suprame4", //i.e."johnDoe12Gh"
   reposLength: 4,
   specificRepos: [],
 };
@@ -79,12 +79,12 @@ const leadership = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
   images: [
     { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
+      img: require("../editable-stuff/AdrianPic.png"), 
       label: "First slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
     { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
+      img: require("../editable-stuff/AdrianPic.png"), 
       label: "Second slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
@@ -99,26 +99,15 @@ const leadership = {
 const skills = {
   show: true,
   heading: "Skills",
-  hardSkills: [
-    { name: "Python", value: 90 },
-    { name: "SQL", value: 75 },
-    { name: "Data Structures", value: 85 },
-    { name: "C/C++", value: 65 },
-    { name: "JavaScript", value: 90 },
-    { name: "React", value: 65 },
-    { name: "HTML/CSS", value: 55 },
-    { name: "C#", value: 80 },
+  languages: [
+    { name: "Python"},
   ],
-  softSkills: [
-    { name: "Goal-Oriented", value: 80 },
-    { name: "Collaboration", value: 90 },
-    { name: "Positivity", value: 75 },
-    { name: "Adaptability", value: 85 },
-    { name: "Problem Solving", value: 75 },
-    { name: "Empathy", value: 90 },
-    { name: "Organization", value: 70 },
-    { name: "Creativity", value: 90 },
+  libraries: [
+    { name: "Goal-Oriented" },
   ],
+  otherSkills: [
+    { name: "Git"}
+  ]
 };
 
 // GET IN TOUCH SECTION
@@ -130,19 +119,36 @@ const getInTouch = {
   email: "adriancortesgonz@gmail.com",
 };
 
-const experiences = {
-  show: false,
+const experience = {
+  show: true,
   heading: "Experiences",
   data: [
     {
-      role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
+      company: 'Expedia Group - Conversation Platform',
+      location: 'Seattle, WA',
+      role: 'Software Development Engineer Apprentice',// Here Add Company Name
+      date: 'Jan 2023 – Present',
+      description: [
+        <ul>
+          <li>Test point</li>
+        </ul>
+      ]
     },
     {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
+      company: 'Amazon - Sustainability Tech',
+      location: 'Remote',
+      role: 'Quality Assurance Engineer Intern',// Here Add Company Name
+      date: 'Sep 2020 – Mar 2021',
+      description: [
+        <ul>
+          <li>Contribute to designing, building, and maintaining a test infrastructure</li>
+          <li>Develop test plans</li>
+          <li>Work with Sr. Software Development Engineers in Test (SDETs) and Sr. Quality Assurance Engineers (QAEs) to understand feature requirements and determine their respective acceptance criteria</li>
+          <li>Ensure that test results are accurate and delivered in a timely fashion</li>
+          <li>Define quality and operational metrics that measure success</li>
+          <li>Perform automation testing</li>
+        </ul>
+      ]
     },
   ]
 }
@@ -152,4 +158,4 @@ const experiences = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experience };
