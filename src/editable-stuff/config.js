@@ -15,18 +15,18 @@ const mainBody = {
       image: "fa-github",
       url: "https://github.com/Suprame4",
     },
-    // {
-    //   image: "fa-facebook",
-    //   url: "https://www.facebook.com/hashirshoaeb",
-    // },
-    // {
-    //   image: "fa-instagram",
-    //   url: "https://www.instagram.com/hashirshoaeb/",
-    // },
-    // {
-    //   image: "fa-linkedin",
-    //   url: "https://www.linkedin.com/in/hashirshoaeb/",
-    // },
+    {
+      image: "fa-linkedin",
+      url: "https://www.linkedin.com/in/adrian-gonzalez-cortes/",
+    },
+    {
+      image: "fa-instagram",
+      url: "https://www.instagram.com/adrian_206/",
+    },
+    {
+      image: "fa-discord",
+      url: "https://www.discordapp.com/users/548004099749052427",
+    },
     // {
     //   image: "fa-twitter",
     //   url: "https://www.twitter.com/hashirshoaeb/",
