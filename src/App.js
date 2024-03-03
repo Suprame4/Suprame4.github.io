@@ -5,10 +5,15 @@ import {
   mainBody,
   about,
   repos,
+  repo2,
+  repo3,
+  repo4, 
   leadership,
   skills,
   getInTouch,
-  experience
+  experience,
+  awards,
+  cerifications,
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
@@ -20,8 +25,13 @@ import Skills from "./components/home/Skills";
 // import BlogPost from "./components/blog/BlogPost";
 import GetInTouch from "./components/home/GetInTouch.jsx";
 import Leadership from "./components/home/Leadership.jsx";
-
 import Experience from "./components/home/Experience";
+import Awards from "./components/home/Awards.jsx";
+import Certification from "./components/home/Certification.jsx";
+
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import { Jumbotron } from "./components/home/migration.jsx";
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -42,8 +52,7 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
         />
       )}
-      {
-        experience.show && (
+      {experience.show && (
           <Experience 
             heading={experience.heading}
             experienceList={experience.data}
@@ -51,11 +60,42 @@ const Home = React.forwardRef((props, ref) => {
         )
       }
       {repos.show && (
-        <Project
-          heading={repos.heading}
-          username={repos.gitHubUsername}
-          length={repos.reposLength}
-          specfic={repos.specificRepos}
+        <Jumbotron id="projects" fluid className="bg-white m-0">
+          <Container className="">
+            <h2 className="display-4 pb-5 text-center">{repos.heading}</h2> 
+              <Row>
+                <Project
+                  heading={repos.heading}
+                  username={repos.gitHubUsername}
+                  length={repos.reposLength}
+                  specfic={repos.specificRepos}
+                />
+                <Project
+                  heading={repo2.heading}
+                  username={repo2.gitHubUsername}
+                  length={repo2.reposLength}
+                  specfic={repo2.specificRepos}
+                />
+                <Project
+                  heading={repo3.heading}
+                  username={repo3.gitHubUsername}
+                  length={repo3.reposLength}
+                  specfic={repo3.specificRepos}
+                />
+                <Project
+                  heading={repo4.heading}
+                  username={repo4.gitHubUsername}
+                  length={repo4.reposLength}
+                  specfic={repo4.specificRepos}
+                />
+                </Row>
+            </Container>
+        </Jumbotron>
+      )}
+      {cerifications.show && (
+        <Certification 
+          heading={cerifications.heading}
+
         />
       )}
       {leadership.show && (
@@ -74,7 +114,14 @@ const Home = React.forwardRef((props, ref) => {
           otherSkills={skills.otherSkills}
         />
       )}
-      
+      {awards.show && (
+        <Awards
+          heading={awards.heading}
+          message={awards.message}
+          img={awards.image}
+          imageSize={awards.imageSize}
+        />
+      )}
     </>
   );
 });

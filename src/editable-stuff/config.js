@@ -54,7 +54,7 @@ const about = {
   imageLink: require("../editable-stuff/AdrianPic.png"),
   imageSize: 375,
   message:
-    "I am currently a software engineering apprentice @ Expedia Group with a focus on frontend tools and technologies, most notiably React. I'm also passionate about continuing to grow my skills in web development and Computer Science through project based leanring and certifications.",
+    "I am currently a software engineering apprentice @ Expedia Group with a focus on frontend tools and technologies. I am passionate about continuing to grow my skills in web development and Computer Science through project based leanring and certifications.",
   resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
 };
 
@@ -66,9 +66,27 @@ const about = {
 const repos = {
   show: true,
   heading: "Recent Projects",
+  gitHubUsername: "The-Syntax-Slingers", //i.e."johnDoe12Gh"
+  reposLength: 0,
+  specificRepos: ["inventory-app"],
+};
+const repo2 = {
+  show: true,
+  gitHubUsername: "NotNotion", //i.e."johnDoe12Gh"
+  reposLength: 0,
+  specificRepos: ["backend_app"],
+};
+const repo3 = {
+  show: true,
+  gitHubUsername: "Open-Sounds", //i.e."johnDoe12Gh"
+  reposLength: 0,
+  specificRepos: ["frontend"],
+};
+const repo4 = {
+  show: true,
   gitHubUsername: "Suprame4", //i.e."johnDoe12Gh"
-  reposLength: 4,
-  specificRepos: [],
+  reposLength: 0,
+  specificRepos: ["Full_stack_open_2022"],
 };
 
 // Leadership SECTION
@@ -121,7 +139,7 @@ const getInTouch = {
 
 const experience = {
   show: true,
-  heading: "Experiences",
+  heading: "Experience",
   data: [
     {
       company: 'Expedia Group - Conversation Platform',
@@ -130,7 +148,12 @@ const experience = {
       date: 'Jan 2023 – Present',
       description: [
         <ul>
-          <li>Test point</li>
+          <li>Develop and maintain internal web applications using React.js and other web technologies </li>
+          <li>Collaborate with backend engineer, designers, program and product managers to deliver high quality software solutions </li>
+          <li>Implement responsive web design and best practices</li>
+          <li>Write unit and integration tests to ensure code quality and reliability</li>
+          <li>Participate in code reviews and provide constructive feedback to peers</li>
+          <li>Develop and maintain internal web applications using React.js and other web technologies</li> 
         </ul>
       ]
     },
@@ -153,9 +176,41 @@ const experience = {
   ]
 }
 
+const awards = {
+  show: true,
+  heading: "Awards",
+  message: 
+    <div>
+      <p>
+        <b>
+          Tableau Iron Viz Competition (2021)
+        </b>
+      </p>
+      <ul>
+        <li> 1st place winner, 3-day Tableau bootcamp - <a href="https://public.tableau.com/app/profile/adrian.gonz/viz/YearUpIntrotoVisualBestPractices_16003639039710/ExplorationofWildlifeStrikes">Dashboard</a> </li>
+      </ul>
+    </div>,
+  images: [
+    {
+      img: require("../editable-stuff/AdrianPic.png"),
+      label: "",
+      paragraph: "",
+    },
+  ], 
+  imageSize: {
+    width: "400",
+    height: "400"
+  }
+}
+
+const cerifications = {
+  show: true,
+  heading: "Certifications",
+  message: ''
+}
 // Blog SECTION
 // const blog = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experience };
+export { navBar, mainBody, about, repos, repo2, repo3, repo4, skills, leadership, getInTouch, experience, awards, cerifications };

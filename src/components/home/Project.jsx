@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useCallback } from "react";
 import Container from "react-bootstrap/Container";
 import { Jumbotron } from "./migration";
@@ -13,11 +14,14 @@ const dummyProject = {
   languages_url: null,
   pushed_at: null,
 };
+
+const token = process.env.REACT_APP_GH_token;
 const API = "https://api.github.com";
 // const gitHubQuery = "/repos?sort=updated&direction=desc";
 // const specficQuerry = "https://api.github.com/repos/hashirshoaeb/";
 
 const Project = ({ heading, username, length, specfic }) => {
+  const config = { headers: { Authorization: `Bearer ${token}`}}
   const allReposAPI = `${API}/users/${username}/repos?sort=updated&direction=desc`;
   const specficReposAPI = `${API}/repos/${username}`;
   const dummyProjectsArr = new Array(length + specfic.length).fill(
@@ -36,7 +40,10 @@ const Project = ({ heading, username, length, specfic }) => {
       // adding specified repos
       try {
         for (let repoName of specfic) {
-          const response = await axios.get(`${specficReposAPI}/${repoName}`);
+          const response = await axios.get(
+            `${specficReposAPI}/${repoName}`,
+            config  
+          );
           repoList.push(response.data);
         }
       } catch (error) {
@@ -55,10 +62,11 @@ const Project = ({ heading, username, length, specfic }) => {
   }, [fetchRepos]);
 
   return (
-    <Jumbotron fluid id="projects" className="bg-light m-0">
-      <Container className="">
-        <h2 className="display-4 pb-5 text-center">{heading}</h2>
-        <Row>
+    <>
+    {/* // <Jumbotron id="projects" fluid className="bg-white m-0">
+    //   <Container className="">*/}
+        {/* <h2 className="display-4 pb-5 text-center">{heading}</h2> */}
+        {/* <Row> */}
           {projectsArray.length
             ? projectsArray.map((project, index) => (
               <ProjectCard
@@ -74,9 +82,10 @@ const Project = ({ heading, username, length, specfic }) => {
                 value={project}
               />
             ))}
-        </Row>
+        {/* </Row>
       </Container>
-    </Jumbotron>
+    </Jumbotron> */}
+    </>
   );
 };
 
