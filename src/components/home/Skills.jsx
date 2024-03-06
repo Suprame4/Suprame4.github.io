@@ -20,14 +20,14 @@ const Skills = React.forwardRef(({ heading, languages, libraries, otherSkills },
     skillsTabRef
   );
   return (
-    <Jumbotron ref={skillsTabRef} fluid className="bg-white m-0" id="skills">
+    <Jumbotron ref={skillsTabRef} fluid className="bg-light m-0" id="skills">
       <Container className="p-5 ">
         <h2 ref={skillsTabRef} className="display-4 pb-5 text-center">
           {heading}
         </h2>
         <Tabs
           className="skills-tabs"
-          defaultActiveKey="language-skills"
+          defaultActiveKey="languages-skills"
           id="skills-tabs"
           fill
         >

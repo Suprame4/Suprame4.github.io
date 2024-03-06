@@ -52,7 +52,7 @@ const about = {
   show: true,
   heading: "About Me",
   imageLink: require("../editable-stuff/AdrianPic.png"),
-  imageSize: 375,
+  imageSize: 350,
   message:
     "I am currently a software engineering apprentice @ Expedia Group with a focus on frontend tools and technologies. I am passionate about continuing to grow my skills in web development and Computer Science through project based leanring and certifications.",
   resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
@@ -118,13 +118,25 @@ const skills = {
   show: true,
   heading: "Skills",
   languages: [
-    { name: "Python"},
+    { name: "JavaScript", value: require("../assets/img/javascript_logo.png") },
+    { name: "TypeScript", value: require("../assets/img/typescript_logo.png") },
+    { name: "Kotlin", value: require("../assets/img/kotlin_logo.png") },
+    { name: "Python", value: require("../assets/img/logo_python.png") },
+    { name: "SQL", value: require("../assets/img/sql_logo.png") },
   ],
   libraries: [
-    { name: "Goal-Oriented" },
+    { name: "React", value: require("../assets/img/react_logo.png") },
+    { name: "Next.js", value: require("../assets/img/nextjs_logo.png") },
+    { name: "Express.js", value: require("../assets/img/express_logo.png") },
+    { name: "React-bootstrap", value: require("../assets/img/react_bootstrap_logo.png") },
+    { name: "Sass", value: require("../assets/img/sass_logo.png") },
   ],
   otherSkills: [
-    { name: "Git"}
+    { name: "Testing/Quality Assurance" },
+    { name: "CI/CD" },
+    { name: "Problem Solving" },
+    { name: "Teamwork" },
+    { name: "Critical Thinking" },
   ]
 };
 
@@ -203,14 +215,22 @@ const awards = {
   }
 }
 
-const cerifications = {
+const certifications = {
   show: true,
   heading: "Certifications",
-  message: ''
+  data: [
+    {
+      title: "IBM Data Engineering",
+      platform: "Coursera",
+      issued: "Nov 2022",
+      credential: "S5ABTPRNVAXD",
+      link: "link"
+    },
+  ]
 }
 // Blog SECTION
 // const blog = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, repo2, repo3, repo4, skills, leadership, getInTouch, experience, awards, cerifications };
+export { navBar, mainBody, about, repos, repo2, repo3, repo4, skills, leadership, getInTouch, experience, awards, certifications };

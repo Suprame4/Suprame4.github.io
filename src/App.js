@@ -13,7 +13,7 @@ import {
   getInTouch,
   experience,
   awards,
-  cerifications,
+  certifications,
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
@@ -92,12 +92,6 @@ const Home = React.forwardRef((props, ref) => {
             </Container>
         </Jumbotron>
       )}
-      {cerifications.show && (
-        <Certification 
-          heading={cerifications.heading}
-
-        />
-      )}
       {leadership.show && (
         <Leadership
           heading={leadership.heading}
@@ -112,6 +106,12 @@ const Home = React.forwardRef((props, ref) => {
           languages={skills.languages}
           libraries={skills.libraries}
           otherSkills={skills.otherSkills}
+        />
+      )}
+      {certifications.show && (
+        <Certification 
+          heading={certifications.heading}
+          certificationList={certifications.data}
         />
       )}
       {awards.show && (
