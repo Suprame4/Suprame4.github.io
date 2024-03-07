@@ -28,7 +28,6 @@ const Certification = ({ heading, certificationList, img, imageSize }) => {
                     </Row>
                 </Container>
                 <div className="col-md-4">
-                    {console.log("TEST")}
                     <Carousel>
                         {img.map((value, index) => {
                             return (
