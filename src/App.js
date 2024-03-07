@@ -112,14 +112,14 @@ const Home = React.forwardRef((props, ref) => {
         <Certification 
           heading={certifications.heading}
           certificationList={certifications.data}
+          img={certifications.images}
+          imageSize={certifications.imageSize}
         />
       )}
       {awards.show && (
         <Awards
           heading={awards.heading}
           message={awards.message}
-          img={awards.image}
-          imageSize={awards.imageSize}
         />
       )}
     </>

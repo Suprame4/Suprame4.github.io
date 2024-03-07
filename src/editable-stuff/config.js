@@ -9,11 +9,15 @@ const mainBody = {
   firstName: "Adrian",
   middleName: "",
   lastName: "Gonzalez Cortes",
-  message: " Developing a passion for development, and growing with each opportunity! 👨‍💻💡 ",
+  message: " Developing a passion for development and growing with each opportunity! 👨‍💻💡 ",
   icons: [
     {
       image: "fa-github",
       url: "https://github.com/Suprame4",
+    },
+    {
+      image: "fa-kaggle",
+      url: "https://www.kaggle.com/adriangonzalezcortes",
     },
     {
       image: "fa-linkedin",
@@ -55,7 +59,7 @@ const about = {
   imageSize: 350,
   message:
     "I am currently a software engineering apprentice @ Expedia Group with a focus on frontend tools and technologies. I am passionate about continuing to grow my skills in web development and Computer Science through project based leanring and certifications.",
-  resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+  resume: "https://www.linkedin.com/in/adrian-gonzalez-cortes",
 };
 
 // PROJECTS SECTION
@@ -220,13 +224,42 @@ const certifications = {
   heading: "Certifications",
   data: [
     {
+      title: "Full Stack Open - React",
+      platform: "University of Helsinki",
+      issued: "Pending",
+      link: "link"
+    },
+    {
       title: "IBM Data Engineering",
       platform: "Coursera",
       issued: "Nov 2022",
       credential: "S5ABTPRNVAXD",
-      link: "link"
+      link: "https://www.coursera.org/account/accomplishments/specialization/certificate/S5ABTPRNVAXD"
     },
-  ]
+    {
+      title: "SQL Basics for Data Science",
+      platform: "Coursera",
+      issued: "Apr 2022",
+      credential: "WB64FBBBZ5UR",
+      link: "https://www.coursera.org/account/accomplishments/specialization/certificate/WB64FBBBZ5UR"
+    },
+  ],
+  images: [
+    {
+      img: require("../editable-stuff/Coursera_data_cert.png"),
+      label: "",
+      paragraph: "",
+    },
+    {
+      img: require("../editable-stuff/Coursera_sql_cert.png"),
+      label: "",
+      paragraph: "",
+    },
+  ], 
+  imageSize: {
+    width: "400",
+    height: "400"
+  }
 }
 // Blog SECTION
 // const blog = {
