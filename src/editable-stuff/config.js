@@ -68,26 +68,26 @@ const about = {
 // If you want to display specfic projects, add the repository names,
 //      i.e ["repository-1", "repo-2"]
 const repos = {
-  show: false,
+  show: true,
   heading: "Recent Projects",
   gitHubUsername: "The-Syntax-Slingers", //i.e."johnDoe12Gh"
   reposLength: 0,
   specificRepos: ["inventory-app"],
 };
 const repo2 = {
-  show: false,
+  show: true,
   gitHubUsername: "NotNotion", //i.e."johnDoe12Gh"
   reposLength: 0,
   specificRepos: ["backend_app"],
 };
 const repo3 = {
-  show: false,
+  show: true,
   gitHubUsername: "Open-Sounds", //i.e."johnDoe12Gh"
   reposLength: 0,
   specificRepos: ["frontend"],
 };
 const repo4 = {
-  show: false,
+  show: true,
   gitHubUsername: "Suprame4", //i.e."johnDoe12Gh"
   reposLength: 0,
   specificRepos: ["Full_stack_open_2022"],
