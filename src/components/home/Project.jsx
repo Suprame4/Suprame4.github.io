@@ -11,13 +11,13 @@ const dummyProject = {
   pushed_at: null,
 };
 
-const token = process.env.REACT_APP_GH_token;
+// const token = process.env.REACT_APP_GH_token;
 const API = "https://api.github.com";
 // const gitHubQuery = "/repos?sort=updated&direction=desc";
 // const specficQuerry = "https://api.github.com/repos/hashirshoaeb/";
 
 const Project = ({ username, length, specfic }) => {
-  const config = { headers: { Authorization: `Bearer ${token}`}}
+  // const config = { headers: { Authorization: `Bearer ${token}`}}
   const allReposAPI = `${API}/users/${username}/repos?sort=updated&direction=desc`;
   const specficReposAPI = `${API}/repos/${username}`;
   const dummyProjectsArr = new Array(length + specfic.length).fill(
@@ -36,10 +36,7 @@ const Project = ({ username, length, specfic }) => {
       // adding specified repos
       try {
         for (let repoName of specfic) {
-          const response = await axios.get(
-            `${specficReposAPI}/${repoName}`,
-            config  
-          );
+          const response = await axios.get(`${specficReposAPI}/${repoName}`);
           repoList.push(response.data);
         }
       } catch (error) {
