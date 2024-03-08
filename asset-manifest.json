@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fe927caf.css",
+    "main.js": "/static/js/main.64f66aa4.js",
+    "static/js/787.4b24f717.chunk.js": "/static/js/787.4b24f717.chunk.js",
+    "static/media/Coursera_data_cert.png": "/static/media/Coursera_data_cert.6f4edd6eb8f517fe89de.png",
+    "static/media/Coursera_sql_cert.png": "/static/media/Coursera_sql_cert.f4766fcfb1070b174df5.png",
+    "static/media/AdrianPic.png": "/static/media/AdrianPic.f8afdee17c8bce75edc9.png",
+    "static/media/logo_python.png": "/static/media/logo_python.3b33e236a97b9048b336.png",
+    "index.html": "/index.html",
+    "main.fe927caf.css.map": "/static/css/main.fe927caf.css.map",
+    "main.64f66aa4.js.map": "/static/js/main.64f66aa4.js.map",
+    "787.4b24f717.chunk.js.map": "/static/js/787.4b24f717.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe927caf.css",
+    "static/js/main.64f66aa4.js"
+  ]
+}
