@@ -168,8 +168,7 @@ const experience = {
           <li>Collaborate with backend engineer, designers, program and product managers to deliver high quality software solutions </li>
           <li>Implement responsive web design and best practices</li>
           <li>Write unit and integration tests to ensure code quality and reliability</li>
-          <li>Participate in code reviews and provide constructive feedback to peers</li>
-          <li>Develop and maintain internal web applications using React.js and other web technologies</li> 
+          <li>Participate in code reviews and provide constructive feedback to peers</li> 
         </ul>
       ]
     },
@@ -205,6 +204,11 @@ const awards = {
       <ul>
         <li> 1st place winner, 3-day Tableau bootcamp - <a href="https://public.tableau.com/app/profile/adrian.gonz/viz/YearUpIntrotoVisualBestPractices_16003639039710/ExplorationofWildlifeStrikes">Dashboard</a> </li>
       </ul>
+      <p>
+        <b>
+          Coursera Scholarship (2022)
+        </b>
+      </p>
     </div>,
   images: [
     {
